@@ -1,0 +1,95 @@
+.loading {
+  backface-visibility: visible;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  display: block;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+
+  animation: rotatexyz 3s linear;
+  animation-iteration-count: infinite;
+
+  div {
+    display: block;
+    position: fixed;
+    line-height: 150px;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    content: " ";
+
+    &::before {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: black;
+      content: " ";
+      transform: translateX(50px);
+      opacity: 0.5;
+    }
+
+    &::after {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: black;
+      content: " ";
+      opacity: 0.5;
+    }
+
+    &:nth-child(1) {
+      transform: rotateX(90deg);
+
+      top: calc(50% - 200px);
+      left: calc(50% - 100px);
+
+      background: blue;
+    }
+
+    &:nth-child(2) {
+      transform: rotateX(90deg);
+
+      top: calc(50% - 100px);
+      left: calc(50% - 100px);
+
+      background: red;
+    }
+
+    &:nth-child(3) {
+      transform: rotate3d(1, 0, 1, 180deg);
+
+      top: calc(50% - 150px);
+      left: calc(50% - 150px);
+
+      background: yellow;
+    }
+
+    &:nth-child(4) {
+      transform: rotate3d(0, 1, 0, 90deg);
+
+      top: calc(50% - 150px);
+      left: calc(50% - 50px);
+
+      background: green;
+    }
+
+    &:nth-child(5) {
+      transform: translateZ(-50px);
+
+      top: calc(50% - 150px);
+      left: calc(50% - 100px);
+
+      background: white;
+    }
+
+    &:nth-child(6) {
+      transform: translateZ(50px);
+
+      top: calc(50% - 150px);
+      left: calc(50% - 100px);
+
+      background: orange;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+figure.tupple {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 22px;
+  grid-template-areas: "concept amount" "slider slider";
+  grid-gap: 22px;
+
+  margin: 10px;
+}
+
+figure.tupple figcaption.left {
+  grid-area: concept;
+  place-self: center left;
+
+  font-family: Roboto-regular;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #161616;
+}
+
+figure.tupple figcaption.right {
+  grid-area: amount;
+  place-self: center right;
+  place-self: end;
+  align-items: baseline;
+}
+
+figure.tupple figcaption.right input {
+  width: 190px;
+  height: 52px;
+  border-radius: 4px;
+  border: solid 1px #d6dcff;
+  background-color: #ffffff;
+
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: 0.77px;
+  text-align: right;
+  color: #161616;
+}
+
+figure.tupple figcaption.right:before {
+  opacity: 0.24;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.51px;
+  color: #161616;
+  content: '$';
+  position: relative;
+  top: -2px;
+  left: 30px;
+}

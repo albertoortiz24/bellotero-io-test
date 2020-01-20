@@ -1,0 +1,77 @@
+.testimonials {
+  display: grid;
+  grid-template-rows: 0.5fr 3fr;
+  max-width: 1096px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 96px;
+}
+
+.testimonials h1 {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  color: #FFF;
+  background-color: #071eb3;
+  margin: 2px 0px;
+  align-self: baseline;
+  padding: 6px 4px;
+  justify-self: baseline;
+}
+
+.testimonials article div.controls {
+  display: flex;
+  position: relative;
+  float: right;
+  top: -30px;
+}
+
+.testimonials article div.controls input {
+  display: block;
+  width: 56px;
+  height: 56px;
+
+  color: #e1e1e1;
+  background-color: #071eb3;
+
+  font-family: CormorantGaramond;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.69px;
+  border: none;
+  outline: none;
+}
+
+.testimonials article div.controls input:hover {
+  color: #FFF;
+}
+
+.testimonials article div.controls input:active {
+  color: #e1e1e1;
+}
+
+.testimonials article div.controls div {
+  width: 120px;
+  height: 56px;
+  border-right: 1px solid #FFF;
+  color: #ffffff;
+  background-color: #071eb3;
+
+  font-family: CormorantGaramond;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.8;
+  letter-spacing: 0.69px;
+  text-align: center;
+}
+
+.testimonials article div.controls div i {
+  font-size: 30px;
+}
